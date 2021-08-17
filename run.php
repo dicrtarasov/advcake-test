@@ -11,6 +11,7 @@ declare(strict_types = 1);
 
 use dicr\StringHelper;
 
+// автозагрузчик классов
 require_once __DIR__ . '/vendor/autoload.php';
 
 /** @var string[] $strs исходные строки */
@@ -20,6 +21,7 @@ $strs = [
     'У каждого языка  есть время жизни. За исключением \'Кобола\', конечно'
 ];
 
+// работаем !
 foreach ($strs as $str) {
     echo 'IN => ' . $str . "\n";
     echo 'OU => ' . StringHelper::reverseWords($str) . "\n\n";
