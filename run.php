@@ -1,3 +1,4 @@
+#!/usr/bin/env php8.0
 <?php
 /**
  * @copyright 2019-2021 Dicr http://dicr.org
@@ -8,7 +9,6 @@
 
 declare(strict_types = 1);
 
-//require_once __DIR__ . '/StringHelper.php';
 use dicr\StringHelper;
 
 require_once __DIR__ . '/vendor/autoload.php';
