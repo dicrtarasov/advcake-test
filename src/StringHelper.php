@@ -3,7 +3,7 @@
  * @copyright 2019-2021 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license proprietary
- * @version 17.08.21 20:43:10
+ * @version 17.08.21 20:53:12
  */
 
 declare(strict_types = 1);
@@ -22,6 +22,10 @@ class StringHelper
      */
     public static function reverseWord(string $word): string
     {
+        if ($word === '') {
+            return '';
+        }
+
         // получаем буквы
         $letters = mb_str_split($word);
 
@@ -31,7 +35,7 @@ class StringHelper
             $letters
         );
 
-        // меняем порядок
+        // меняем порядок букв
         $letters = array_reverse($letters);
 
         // восстанавливаем регистр
@@ -59,11 +63,7 @@ class StringHelper
         // переставляем буквы только в словах
         $parts = [];
         foreach (preg_split('~\b~um', $str) as $i => $part) {
-            if ($i % 2 === 1) {
-                $part = self::reverseWord($part);
-            }
-
-            $parts[] = $part;
+            $parts[] = $i % 2 === 0 ? $part : self::reverseWord($part);
         }
 
         // склеиваем и возвращаем
