@@ -16,5 +16,9 @@
         "psr-4": {
             "dicr\\": "src/"
         }
+    },
+
+    "require": {
+        "ext-mbstring": "*"
     }
 }
