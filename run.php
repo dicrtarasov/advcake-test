@@ -23,8 +23,8 @@ $strs = [
 
 // работаем !
 foreach ($strs as $str) {
-    echo 'IN => ' . $str . "\n";
-    echo 'OU => ' . StringHelper::reverseWords($str) . "\n\n";
+    echo 'IN => ' . $str . "\n" .
+        'OU => ' . StringHelper::reverseWords($str) . "\n\n";
 }
 
 echo "Done.\n";
