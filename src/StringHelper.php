@@ -3,10 +3,11 @@
  * @copyright 2019-2021 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license proprietary
- * @version 17.08.21 20:37:09
+ * @version 17.08.21 20:43:10
  */
 
 declare(strict_types = 1);
+namespace dicr;
 
 /**
  * Строковые утилиты.

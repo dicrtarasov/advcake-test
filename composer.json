@@ -1,0 +1,20 @@
+{
+    "name": "dicr/advcake-test",
+    "type": "project",
+    "license": "proprietary",
+    "keywords": ["dicr", "test"],
+    "authors": [
+        {
+            "name": "Igor A Tarasov",
+            "email": "develop@dicr.org",
+            "homepage": "https://dicr.org",
+            "role": "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "dicr\\": "src/"
+        }
+    }
+}

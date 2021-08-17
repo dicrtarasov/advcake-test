@@ -3,12 +3,15 @@
  * @copyright 2019-2021 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license proprietary
- * @version 17.08.21 20:36:23
+ * @version 17.08.21 20:43:32
  */
 
 declare(strict_types = 1);
 
-require_once __DIR__ . '/StringHelper.php';
+//require_once __DIR__ . '/StringHelper.php';
+use dicr\StringHelper;
+
+require_once __DIR__ . '/vendor/autoload.php';
 
 /** @var string[] $strs исходные строки */
 $strs = [
